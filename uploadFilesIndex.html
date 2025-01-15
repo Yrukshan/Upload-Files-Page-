@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Upload</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='uploadFilesStyle.css'>
+    
+</head>
+<body>
+
+    <section>
+        <form action="" autocomplete="off" enctype="multipart/form-data">
+            <p>Upload File</p>
+            <div>
+                <input type="file" id="Upload" style="display: none;">
+                <label for="Upload">Select Files</label>
+            </div>
+            <button><span>&#8682; upload </span> <span class="uploading">Uploading......</span></button>
+            <button class="Cancle">Cancle Upload</button>
+            <div class="pr">
+                <strong>
+                    <h4 class="ex">PDF</h4>
+                    <h5 class="size">2.5kb</h5>
+                </strong>
+                <progress min="0" max="100" value="0"></progress>
+                <span class="progress-indicator"></span>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
+<script src='uploadFilesScript.js'></script>
